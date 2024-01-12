@@ -40,6 +40,32 @@
                                 "type": "basic"
                             }
                         ]
+                    },
+                    {
+                        "description": "Change right_option to non_us_backslash if pressed alone.",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "right_option",
+                                    "modifiers": {
+                                        "optional": [
+                                            "any"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "right_option"
+                                    }
+                                ],
+                                "to_if_alone": [
+                                    {
+                                        "key_code": "non_us_backslash"
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
                     }
                 ]
             },
